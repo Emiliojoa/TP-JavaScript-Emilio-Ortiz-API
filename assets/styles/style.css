@@ -1,5 +1,11 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .anime{
-    background-color: rgb(31, 117, 192);
+    background-color: rgba(82, 160, 224, 0.377);
     
 }
 .container{
@@ -8,14 +14,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
 }
-.animeurl{
-    width: 100%;
-    height: 100%;
-    display: flex;
+#container img{
+    width: 300px;
+    height: 250px;
+    border-radius: 20PX;
+    display:flex ;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    background-color: rgb(31, 117, 192);
+    margin-top: 50px;
+}
+
+#container:hover{
+    background-color: rgba(127, 190, 25, 0.658);
+    transition: 0.5s;
 }
