@@ -34,9 +34,8 @@ function displayCharacters(anime) {
       const animeElement = document.createElement("div");
       animeElement.className = "anime";
       animeElement.innerHTML = `
-            <img src="${anime[i].url}">
-            
-            
+            <img class="gatos" src="${anime[i].url}">
+            <p class="id">ID: ${anime[i].id}"</p>
         `;
       container.appendChild(animeElement);
     };
