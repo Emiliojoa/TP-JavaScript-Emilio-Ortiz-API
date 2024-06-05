@@ -31,13 +31,19 @@ function displayCharacters(anime) {
     const container = document.getElementById("container");
     
     for(i in anime){
-      const animeElement = document.createElement("div");
-      animeElement.className = "anime";
-      animeElement.innerHTML = `
+    const animeElement = document.createElement("div");
+    animeElement.className = "anime";
+    animeElement.innerHTML = `
             <img class="gatos" src="${anime[i].url}">
             <p class="id">ID: ${anime[i].id}"</p>
+
         `;
-      container.appendChild(animeElement);
+    container.appendChild(animeElement);
     };
 }
+const boton = document.getElementById("botonid")
+
+boton.addEventListener("click",()=>{
+    location.reload();
+})
 
